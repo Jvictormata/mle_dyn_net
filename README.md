@@ -132,10 +132,9 @@ $$
     \end{bmatrix}, 
 $$
 
-for the ARMAX case with same lambdas, and
+for the ARMAX case with same lambdas, or
 
 $$
-    \quad \text{or} \quad 
     \theta = \begin{bmatrix}
     a_1 \\\
     b_1 \\\
@@ -168,7 +167,7 @@ Check the code in "MLE - 1.1 Estimation (u1,u3) ARMAX - ARX init - 100 systems -
 
 
   * A1 = gen_A1(theta,n_ab,P,N)
-  Generates $A_1$ as in (4).
+  Generates $A_1$.
 
   * a,b = get_ab(theta,n_ab)
   Returns the coefficients of the numerator and denominator of the transfer functions of each transfer function, a = list of denominators, b = list of numerators.
